@@ -1,11 +1,7 @@
-import Navbar from "@/components/Navbar";
+import Frame from "@/components/ui/home/Frame";
 
 const HomePage = () => {
-  return (
-    <div>
-      <p className="text-gray-600">It has been under constructions</p>
-    </div>
-  );
+  return <Frame />;
 };
 
 export default HomePage;
