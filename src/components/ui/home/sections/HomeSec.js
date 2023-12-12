@@ -19,7 +19,7 @@ const HomeSec = () => {
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
+      2000 // every 2 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);
@@ -43,14 +43,14 @@ const HomeSec = () => {
             Web Developer
           </span>
         </h1>
-        <p className="text-xs text-gray-600 my-4">
-          Hello there! I'm RiaJul Pro, a dedicated MERN stack developer and
+        <p className="text-xs text-gray-400 my-4">
+          Hello there! I&apos;m RiaJul Pro, a dedicated MERN stack developer and
           front-end specialist with a passion for crafting seamless and visually
           appealing websites. I specialize in translating your ideas into
-          interactive and functional web applications. Whether you're a small
-          business aiming to establish an online presence or a medium-sized
-          enterprise looking to enhance your digital footprint, I've got you
-          covered.
+          interactive and functional web applications. Whether you&apos;re a
+          small business aiming to establish an online presence or a
+          medium-sized enterprise looking to enhance your digital footprint,
+          I&apos;ve got you covered.
         </p>
         <div>
           <button className="px-6 py-3 rounded bg-colorPrimary text-black hover:bg-bgColor hover:text-colorPrimary cursor-pointer transition-all duration-300 ease-in-out">

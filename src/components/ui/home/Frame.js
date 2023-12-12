@@ -24,6 +24,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HomeSec from "./sections/HomeSec";
+import AboutSec from "./sections/AboutSec";
+import ProjectsSec from "./sections/ProjectsSec";
+import SkillsSec from "./sections/SkillsSec";
+import EducationSec from "./sections/EducationSec";
+import ServicesSec from "./sections/ServicesSec";
+import ContactSec from "./sections/ContactSec";
 
 const drawerWidth = 240;
 
@@ -56,7 +62,6 @@ const Frame = () => {
         "contact",
       ];
 
-      // Find the first section whose offsetTop is greater than the current scroll position
       const activeSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -68,7 +73,6 @@ const Frame = () => {
         return false;
       });
 
-      // Update the active link based on the active section
       if (activeSection) {
         setActiveLink(activeSection);
       }
@@ -331,32 +335,32 @@ const Frame = () => {
 
           {/* about section */}
           <section id="about" className="md:h-screen">
-            <h1>About</h1>
+            <AboutSec />
           </section>
 
           {/* projects section */}
           <section id="projects" className="md:h-screen">
-            <h1>Projects</h1>
+            <ProjectsSec />
           </section>
 
           {/* skills section */}
           <section id="skills" className="md:h-screen">
-            <h1>Skills</h1>
+            <SkillsSec />
           </section>
 
           {/* education section */}
           <section id="education" className="md:h-screen">
-            <h1>Education</h1>
+            <EducationSec />
           </section>
 
           {/* services section */}
           <section id="services" className="md:h-screen">
-            <h1>Services</h1>
+            <ServicesSec />
           </section>
 
           {/* contact section */}
           <section id="contact" className="md:h-screen">
-            <h1>Contact</h1>
+            <ContactSec />
           </section>
         </Box>
       </Box>
