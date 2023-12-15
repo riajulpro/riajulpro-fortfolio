@@ -297,7 +297,179 @@ const Frame = () => {
               },
             }}
           >
-            {drawerNav}
+            <Box>
+              <div className="bg-colorBlack py-10 flex justify-center items-center">
+                <Image
+                  src={RiajulPro}
+                  alt="RiaJul Pro"
+                  height={90}
+                  width={160}
+                />
+              </div>
+
+              <Stack className="px-5 py-1 pt-3" spacing={1}>
+                <Link href="#home">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "home"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <HomeIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Home
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={0} className="px-5 py-1">
+                <Link href="#about">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "about"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <PersonIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      About
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={0} className="px-5 py-1">
+                <Link href="#projects">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "projects"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <AutoModeIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Projects
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+
+              <Stack spacing={1} className="px-5 py-1">
+                <Link href="#skills">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "skills"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <InsightsIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Skills
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={1} className="px-5 py-1">
+                <Link href="#education">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "education"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <SchoolIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Education
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={1} className="px-5 py-1">
+                <Link href="#services">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "services"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <BusinessCenterIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Services
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={0} className="px-5 py-1">
+                <Link href="#contact">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "contact"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <DraftsIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Contact
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+            </Box>
           </Drawer>
 
           {/* Mobile Drawer */}
@@ -314,7 +486,179 @@ const Frame = () => {
             }}
             open
           >
-            {drawerNav}
+            <Box>
+              <div className="bg-colorBlack py-10 flex justify-center items-center">
+                <Image
+                  src={RiajulPro}
+                  alt="RiaJul Pro"
+                  height={90}
+                  width={160}
+                />
+              </div>
+
+              <Stack className="px-5 py-1 pt-3" spacing={1}>
+                <Link href="#home">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "home"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <HomeIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Home
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={0} className="px-5 py-1">
+                <Link href="#about">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "about"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <PersonIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      About
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={0} className="px-5 py-1">
+                <Link href="#projects">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "projects"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <AutoModeIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Projects
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+
+              <Stack spacing={1} className="px-5 py-1">
+                <Link href="#skills">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "skills"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <InsightsIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Skills
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={1} className="px-5 py-1">
+                <Link href="#education">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "education"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <SchoolIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Education
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={1} className="px-5 py-1">
+                <Link href="#services">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "services"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <BusinessCenterIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Services
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+              <Stack spacing={0} className="px-5 py-1">
+                <Link href="#contact">
+                  <Stack
+                    direction="row"
+                    spacing={1}
+                    alignItems="center"
+                    className="border-2 rounded-full border-colorBlack group cursor-pointer"
+                  >
+                    <IconButton
+                      className={`${
+                        activeLink === "contact"
+                          ? "bg-colorPrimary"
+                          : "bg-colorBlack"
+                      } group-hover:bg-colorPrimary`}
+                    >
+                      <DraftsIcon className="text-white" />
+                    </IconButton>
+                    <Typography className="text-xs uppercase group-hover:pl-3 transition-all duration-300">
+                      Contact
+                    </Typography>
+                  </Stack>
+                </Link>
+              </Stack>
+            </Box>
           </Drawer>
         </Box>
 

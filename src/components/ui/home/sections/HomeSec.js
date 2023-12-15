@@ -29,10 +29,16 @@ const HomeSec = () => {
   return (
     <div className="md:h-screen flex flex-col-reverse md:flex-row justify-center items-center bg-colorBlack m-2 rounded-md">
       <div className="flex-1 p-4">
-        <h1 className="text-2xl md:text-5xl font-bold uppercase">
+        <h1
+          data-aos="fade-down"
+          className="text-2xl md:text-5xl font-bold uppercase"
+        >
           Hi, I am RiaJul!
         </h1>
-        <h1 className="text-base md:text-3xl font-bold uppercase flex gap-2">
+        <h1
+          data-aos="fade-up"
+          className="text-base md:text-3xl font-bold uppercase flex gap-2"
+        >
           A
           <span className="text-colorPrimary">
             <TextTransition springConfig={presets.wobbly}>
@@ -43,7 +49,7 @@ const HomeSec = () => {
             Web Developer
           </span>
         </h1>
-        <p className="text-xs text-gray-400 my-4">
+        <p data-aos="zoom-out-up" className="text-xs text-gray-400 my-4">
           Hello there! I&apos;m RiaJul Pro, a dedicated MERN stack developer and
           front-end specialist with a passion for crafting seamless and visually
           appealing websites. I specialize in translating your ideas into
@@ -53,10 +59,11 @@ const HomeSec = () => {
           I&apos;ve got you covered.
         </p>
         <div>
-          <button className="px-6 py-3 rounded bg-colorPrimary text-black hover:bg-bgColor hover:text-colorPrimary cursor-pointer transition-all duration-300 ease-in-out">
-            <span className="uppercase">Resume</span> <FileDownloadIcon />
-          </button>
-          <button></button>
+          <a href="/resume.pdf" download="resume.pdf">
+            <button className="px-6 py-3 rounded bg-colorPrimary text-black hover:bg-bgColor hover:text-colorPrimary cursor-pointer transition-all duration-300 ease-in-out active:scale-95">
+              <span className="uppercase">Resume</span> <FileDownloadIcon />
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex-1">

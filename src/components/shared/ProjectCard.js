@@ -12,7 +12,12 @@ const ProjectCard = ({
 }) => {
   console.log(thumbnail);
   return (
-    <div className="bg-colorBlack rounded-xl overflow-hidden md:max-w-2xl my-2 md:my-8">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="bg-colorBlack rounded-xl overflow-hidden md:max-w-2xl my-2 md:my-8"
+    >
       <div className="overflow-y-auto w-full h-48">
         <Image
           className="object-cover object-top"
